@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form method="post" action="">
+        <fieldset> 
+       <h1>Registration form</h1>
+       <p>please fill in the form correctly</p> 
+       <label for="f.name">enter your firstname: <input type="text" placeholder="" class="f.name" required/></label>
+       <label for="l.name">enter your last name: <input type="text" placeholder="" class="l.name" required/></label>
+       <label for="email">enter your email: <input type="email" id="email" name="email"/></label>
+       <label for="new-password">create new password: <input  type="password"  name="password" id="new-password" pattern="[a-z0-5]{8,}"/></label>
+</fieldset>
+    <fieldset><legend>Account-type</legend>
+   <label for="business-account"><input type="radio" name="Account-type" class="inline"/>business</label>
+   <label for="personal-account"><input type="radio" name="personal-account" class="inline"/>personal</label>
+</fieldset>
+    <fieldset>
+      <label for="age">input your age(years)<input type="number" min="18" max="120"  id="age" required/></label> 
+      <label for="profile-picture">upload your profile picture<input  id="profile-picture" type="file" name="file" /></label> 
+      <label for="referrer">How did you hear about us?
+      <select id="referrer" name="referrer">
+      <option value="">(select one)</option>
+      <option value="1">freecodecamp News</option>
+      <option value="2">freecodecamp youtube Channel</option>
+      <option value="3">freecodecamp Forum</option>
+      <option value="4">Others</option>
+    </select>
+    </label>
+    <label for="bio">provide a bio:
+
+        <textarea id="bio" name="bio" rows="3" cols="30" placeholder="i like coding on the beach..."></textarea>
+    </label>
+</fieldset>
+    <label  for="terms and condition"><input  class="inline" type="checkbox" id="terms and condition" name="terms and condition"  required />I accept the<a href="">terms and condition</a>
+     </label>
+   <input type="submit"/>
+  
+</form>
+</body>
+</html>
